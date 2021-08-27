@@ -62,6 +62,7 @@
         {"name": "Get-LAPSPasswords.fireeye"},
         {"name": "Get-ReconInfo.fireeye"},
         {"name": "Internal-Monologue.fireeye"},
+        {"name": "kali.fireeye"},
         {"name": "Inveigh.fireeye"},
         {"name": "Seclists.fireeye"},
         {"name": "Invoke-DCOM.fireeye"},
