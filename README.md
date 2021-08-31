@@ -77,6 +77,20 @@ To permanently disable Microsoft Defender:
 
   [1]: https://stackoverflow.com/questions/62174426/how-to-permanently-disable-windows-defender-real-time-protection-with-gpo
 
+CPT Install
+--------------
+> Custom profile for 169 CPT
+1.	Download the zip from https://github.com/fireeye/commando-vm into your Downloads folder.
+2.	Decompress the zip and edit the `${Env:UserProfile}\Downloads\commando-vm-master\commando-vm-master\profile.json` file by removing tools or adding tools in the “packages” section. You can add any package listed in our [package list](https://github.com/fireeye/commando-vm/blob/master/packages.csv) or any package from the [chocolatey repository](https://chocolatey.org/packages).
+3.	Open an administrative PowerShell window and enable script execution.
+`Set-ExecutionPolicy Unrestricted -f`
+4.	Change to the unzipped project directory.
+`cd ${Env:UserProfile}\Downloads\commando-vm-master\commando-vm-master\`
+5.  Unblock the install file by running `Unblock-File .\install.ps1`
+6.	Take a snapshot of your machine!
+7. Execute the install with the `-profile_file` argument.
+`.\install.ps1 -profile_file .\Profiles\169cpt.json`
+
 Standard install
 ----------------
 1. Create and configure a new Windows Virtual Machine
