@@ -80,8 +80,8 @@ To permanently disable Microsoft Defender:
 CPT Install
 --------------
 > Custom profile for 169 CPT
-1.	Download the zip from https://github.com/fireeye/commando-vm into your Downloads folder.
-2.	Decompress the zip and edit the `${Env:UserProfile}\Downloads\commando-vm-master\commando-vm-master\profile.json` file by removing tools or adding tools in the “packages” section. You can add any package listed in our [package list](https://github.com/fireeye/commando-vm/blob/master/packages.csv) or any package from the [chocolatey repository](https://chocolatey.org/packages).
+1.	Download the zip from https://github.com/169CPT/commando-vm into your Downloads folder.
+2.	Decompress the zip and edit the `${Env:UserProfile}\Downloads\commando-vm-master\commando-vm-master\Profiles\169cpt.json` file by removing tools or adding tools in the “packages” section. You can add any package listed in our [package list](https://github.com/fireeye/commando-vm/blob/master/packages.csv) or any package from the [chocolatey repository](https://chocolatey.org/packages).
 3.	Open an administrative PowerShell window and enable script execution.
 `Set-ExecutionPolicy Unrestricted -f`
 4.	Change to the unzipped project directory.
